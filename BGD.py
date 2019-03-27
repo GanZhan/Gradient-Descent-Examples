@@ -3,7 +3,7 @@ from GradientDescent.data_utils import get_points
 
 def current_loss_4_BGD(w_current, b_current, x, y, _length):
     """
-    calculate loss for batch gradient descent at every step: (w_current, b_current)
+    calculate current loss for batch gradient descent at every step: (w_current, b_current)
     :param w_current:
     :param b_current:
     :param x:
@@ -20,7 +20,8 @@ def current_loss_4_BGD(w_current, b_current, x, y, _length):
 
 def step_gradient(w_current, b_current, x, y, _length, lr):
     """
-    calculate gradient for current w & b
+    
+    calculate gradient of current w & b for one step, then update them to get new w_current & b_current 
     :param w_current:
     :param b_current:
     :param x:
@@ -42,7 +43,7 @@ def step_gradient(w_current, b_current, x, y, _length, lr):
 
 def gradient_descent_runner(w_starter, b_starter, x, y, _length, lr, steps):
     """
-    calculate the value for w & b after certain BGD steps
+    calculate the value for w_current & b_current after certain BGD steps
     :param w_starter:
     :param b_starter:
     :param x:
@@ -62,6 +63,9 @@ def gradient_descent_runner(w_starter, b_starter, x, y, _length, lr, steps):
 def main():
     """
     given a bunch of data, using different geadient descent algorithms to do the linear regression
+    calculate the total loss at first with w_starter & b_starter
+    train it with BGD for certain steps
+    then calculate the loss for current W and b
     :return:
     """
     filepath = 'data.csv'
