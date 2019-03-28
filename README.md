@@ -1,2 +1,2 @@
 # Gradient-Descent-Examples
-Examples for gradient descent algorithms like: BGD、SGD &amp; MBGD
+A small example for gradient descent algorithms like: BGD、SGD &amp; MBGD
