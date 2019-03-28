@@ -12,5 +12,3 @@ def get_points(filepath):
             x = np.append(x, float(row[0]))
             y = np.append(y, float(row[1]))
     return x, y, _length
-# filepath = 'data.csv'
-# get_points(filepath)
