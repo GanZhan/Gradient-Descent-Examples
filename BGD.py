@@ -20,8 +20,7 @@ def current_loss_4_BGD(w_current, b_current, x, y, _length):
 
 def step_gradient(w_current, b_current, x, y, _length, lr):
     """
-    
-    calculate gradient of current w & b for one step, then update them to get new w_current & b_current 
+    calculate gradient of current w & b in one step, then update them to get new w_current & b_current 
     :param w_current:
     :param b_current:
     :param x:
